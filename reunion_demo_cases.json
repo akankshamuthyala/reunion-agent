@@ -1,0 +1,756 @@
+[
+  {
+    "case_id": "RN-1998-0001",
+    "name": "Lakshmi Bai",
+    "alias": ["Lakku", "Laxmi"],
+    "status": "matched_pending_consent",
+    "access_tier": 2,
+    "reported_by": {
+      "name": "Sunita Bai",
+      "relationship": "mother",
+      "contact": "+91-9876543210",
+      "aadhaar_verified": false
+    },
+    "date_reported": "1998-09-14",
+    "missing_since": "1998-09-10",
+    "age_when_missing": 8,
+    "estimated_current_age": 35,
+    "gender": "female",
+    "physical_description": {
+      "height_cm": 115,
+      "build": "slim",
+      "complexion": "wheatish",
+      "hair": "black, long, braided",
+      "eyes": "dark brown",
+      "distinguishing_marks": [
+        "small scar on left knee from childhood fall",
+        "birthmark on right forearm, oval shaped, 2cm"
+      ]
+    },
+    "description": "Lakshmi Bai went missing on 10 September 1998 near Govindpur Railway Station, Jharkhand. She was 8 years old, wearing a red and yellow salwar kameez. She had gone to fetch water from a community tap 200 metres from home and did not return. Her mother Sunita was at work. Neighbours reported seeing a man speaking to a young girl near the station platform around 4pm. No body was found. Suspected trafficking via Howrah-bound train. Lakshmi was bright, spoke Santhali and basic Hindi, loved drawing flowers on the mud walls of their home. The family has no Aadhaar documents from that period.",
+    "photo_description": "School photograph from 1997. Young girl aged 7-8, slim build, wheatish complexion, long black hair in two braids tied with red ribbons. Wearing a green school uniform shirt. Bright eyes, small nose, slightly prominent cheekbones typical of Santhali facial features. Gap in upper front teeth — adult teeth just coming in. Expression is serious, looking directly at camera.",
+    "location_last_seen": {
+      "address": "Near community water tap, Govindpur ward 4",
+      "district": "Dhanbad",
+      "state": "Jharkhand",
+      "pin_code": "828111",
+      "geo": { "lat": 23.7957, "lon": 86.4304 }
+    },
+    "circumstances": "trafficking_suspected",
+    "vulnerability_flags": [
+      "minor_at_disappearance",
+      "no_aadhaar",
+      "tribal_community",
+      "trafficking_route"
+    ],
+    "age_progression": {
+      "generated_at": "2025-06-01T10:30:00Z",
+      "model_used": "gemini-1.5-pro",
+      "predictions": [
+        {
+          "age": 15,
+          "description": "Teenager. Face elongated slightly, cheekbones more defined. Hair likely still long. Santhali facial structure clearer — high cheekbones, strong jaw beginning to form. Gap teeth closed. Height estimated 150–155cm.",
+          "confidence": 0.82
+        },
+        {
+          "age": 25,
+          "description": "Young adult woman. Full adult facial structure. Cheekbones prominent, oval face. Complexion possibly slightly darker from sun exposure if working outdoors. Height 152–157cm. Likely no longer in school uniform context.",
+          "confidence": 0.74
+        },
+        {
+          "age": 35,
+          "description": "Adult woman, estimated 2025 appearance. Fine lines possible around eyes. Facial bone structure settled — high cheekbones, defined jaw. Complexion wheatish to medium depending on environment. Hair may be shorter or tied back. Birthmark on right forearm still present and identifiable. Scar on left knee still visible.",
+          "confidence": 0.68
+        }
+      ]
+    },
+    "sightings": [
+      {
+        "sighting_id": "SG-2025-0441",
+        "reported_date": "2025-05-15",
+        "location": "Zari-Zarigarh, Nagpur district, Maharashtra",
+        "description": "A woman matching the age-progressed description was seen working at a handloom unit. She speaks Santhali with a Jharkhand accent according to a co-worker from the same region. She has a visible birthmark on her right forearm and a scar on her left knee. She appeared uncomfortable when asked about her family.",
+        "match_confidence": 0.91,
+        "verified": false,
+        "reporter_tier": 2
+      }
+    ],
+    "risk_assessment": {
+      "assessed_at": "2025-05-16T08:00:00Z",
+      "risk_level": "high",
+      "risk_flags": [
+        "original_disappearance_matches_trafficking_route",
+        "found_in_bonded_labour_context",
+        "27_year_gap_limits_voluntary_reunion_confidence"
+      ],
+      "recommendation": "NGO welfare check required before any family contact. Consent wall mandatory. Do not reveal location to reporting family until consent confirmed."
+    },
+    "consent_record": {
+      "consent_asked_date": null,
+      "ngo_name": "Prerana Anti-Trafficking NGO",
+      "outcome": "pending",
+      "notes": "NGO visit scheduled for 2025-05-22. Woman is employed, appears to have built a life. Approach with extreme care — do not disrupt employment or housing before consent obtained."
+    },
+    "tags": ["jharkhand", "santhali", "trafficking", "long_duration", "age_progression_match", "priority", "elastic_demo"],
+    "created_at": "1998-09-14T00:00:00Z",
+    "updated_at": "2025-05-16T08:00:00Z"
+  },
+
+  {
+    "case_id": "RN-2019-0112",
+    "name": "Arjun Mehta",
+    "alias": ["Arjju"],
+    "status": "open",
+    "access_tier": 1,
+    "reported_by": {
+      "name": "Ramesh Mehta",
+      "relationship": "father",
+      "contact": "+91-9988776655",
+      "aadhaar_verified": true
+    },
+    "date_reported": "2019-03-05",
+    "missing_since": "2019-03-03",
+    "age_when_missing": 14,
+    "estimated_current_age": 20,
+    "gender": "male",
+    "physical_description": {
+      "height_cm": 158,
+      "build": "medium",
+      "complexion": "fair",
+      "hair": "black, short cropped",
+      "eyes": "black",
+      "distinguishing_marks": ["Vitiligo patch on left hand, back of palm, approx 4cm diameter"]
+    },
+    "description": "Arjun Mehta left his home in Karol Bagh, Delhi on 3 March 2019, telling his mother he was going to a friend's house for a school project. He did not return. His school bag and books were found at Connaught Place metro station. CCTV showed him boarding a train towards New Delhi Railway Station with an older male companion never identified. Arjun had been struggling with school pressure and mentioned online gaming friends to classmates. His Aadhaar card and phone were left at home. He had discussed 'a better life' with online contacts according to classmates. Suspected online grooming.",
+    "photo_description": "Recent school photo from 2018. Teenage boy, fair complexion, short black hair, medium build. Wearing white school shirt with blue tie. Slight smile, dark eyes. Vitiligo patch visible on left hand resting on desk. Clean-shaven, beginning of adolescent facial development.",
+    "location_last_seen": {
+      "address": "Connaught Place Metro Station, New Delhi",
+      "district": "Central Delhi",
+      "state": "Delhi",
+      "pin_code": "110001",
+      "geo": { "lat": 28.6315, "lon": 77.2167 }
+    },
+    "circumstances": "runaway",
+    "vulnerability_flags": ["minor_at_disappearance"],
+    "sightings": [],
+    "tags": ["delhi", "teenager", "online_grooming_suspected", "metro", "vitiligo"],
+    "created_at": "2019-03-05T09:00:00Z",
+    "updated_at": "2024-11-20T14:00:00Z"
+  },
+
+  {
+    "case_id": "RN-2021-0389",
+    "name": "Fatima Begum",
+    "alias": ["Fattu"],
+    "status": "open",
+    "access_tier": 4,
+    "reported_by": {
+      "name": "Abdul Karim",
+      "relationship": "husband",
+      "contact": "Childline 1098 — no personal phone",
+      "aadhaar_verified": false
+    },
+    "date_reported": "2021-07-18",
+    "missing_since": "2021-07-15",
+    "age_when_missing": 22,
+    "estimated_current_age": 26,
+    "gender": "female",
+    "physical_description": {
+      "height_cm": 152,
+      "build": "slim",
+      "complexion": "dark",
+      "hair": "black, medium length",
+      "eyes": "brown",
+      "distinguishing_marks": ["Burn scar on right wrist, old, healed, approx 6cm"]
+    },
+    "description": "Fatima Begum went missing from her village in Murshidabad district, West Bengal on 15 July 2021. She was last seen walking towards the bus stand to visit her sister in Berhampore. She never arrived at her sister's home. Fatima had confided to a neighbour that her in-laws were pressuring her for more dowry and that she feared violence. Her husband Abdul Karim filed the report through Childline 1098 — the family has no smartphone and no Aadhaar. Suspected forced departure due to domestic violence. No children. Old burn scar on right wrist reportedly from a cooking accident three years ago.",
+    "photo_description": "No photo available. Physical description only: young woman, 22 years old, slim build, dark complexion, medium black hair. Burn scar on right wrist. Last seen wearing green and white printed salwar kameez with white dupatta.",
+    "location_last_seen": {
+      "address": "Lalbagh Bus Stand area, Murshidabad",
+      "district": "Murshidabad",
+      "state": "West Bengal",
+      "pin_code": "742149",
+      "geo": { "lat": 24.1800, "lon": 88.2700 }
+    },
+    "circumstances": "family_conflict",
+    "vulnerability_flags": ["no_aadhaar", "no_family_contact"],
+    "sightings": [],
+    "tags": ["west_bengal", "domestic_violence_context", "no_photo", "childline_tier4", "dowry"],
+    "created_at": "2021-07-18T00:00:00Z",
+    "updated_at": "2023-02-10T09:00:00Z"
+  },
+
+  {
+    "case_id": "RN-2015-0074",
+    "name": "Ravi Kumar Sharma",
+    "alias": ["Chotu Ravi"],
+    "status": "open",
+    "access_tier": 2,
+    "reported_by": {
+      "name": "Kamla Sharma",
+      "relationship": "mother",
+      "contact": "+91-7654321098",
+      "aadhaar_verified": false
+    },
+    "date_reported": "2015-11-02",
+    "missing_since": "2015-10-30",
+    "age_when_missing": 9,
+    "estimated_current_age": 19,
+    "gender": "male",
+    "physical_description": {
+      "height_cm": 120,
+      "build": "slim",
+      "complexion": "dark",
+      "hair": "black, short",
+      "eyes": "dark brown",
+      "distinguishing_marks": ["Missing tip of right index finger — injured in cotton gin age 7", "Cross-shaped scar on chin"]
+    },
+    "description": "Ravi Kumar Sharma was working with a travelling circus group that visited Patna during Diwali festival 2015 when he disappeared. His mother had sent him to carry food to his uncle who worked with the circus. He was last seen near the big tent at Gandhinagar ground at 8pm. The circus left the next morning. Ravi had previously been used as child labour at a brick kiln. Family is extremely poor, no documents. The missing tip of his right index finger from a cotton gin accident is a strong identifying marker.",
+    "photo_description": "No recent photo. Description: boy approximately 9 years old, very slim build, dark complexion, short black hair. Missing the tip of his right index finger — visible stump. Cross-shaped scar on chin from a fall. At 19 years old in 2025 he would be a young man, likely with prominent Bihari facial features.",
+    "location_last_seen": {
+      "address": "Gandhinagar Maidan circus ground, Patna",
+      "district": "Patna",
+      "state": "Bihar",
+      "pin_code": "800001",
+      "geo": { "lat": 25.5941, "lon": 85.1376 }
+    },
+    "circumstances": "kidnapping",
+    "vulnerability_flags": ["minor_at_disappearance", "no_aadhaar", "bonded_labour_context"],
+    "sightings": [
+      {
+        "sighting_id": "SG-2022-0118",
+        "reported_date": "2022-08-10",
+        "location": "Varanasi, Uttar Pradesh — near Assi Ghat",
+        "description": "A young man, approx 16, missing right index fingertip, seen working as a tea stall helper. Spoke Bhojpuri. Ran away when police approached.",
+        "match_confidence": 0.71,
+        "verified": false,
+        "reporter_tier": 3
+      }
+    ],
+    "tags": ["bihar", "child_labour", "circus", "strong_identifier_missing_finger", "patna"],
+    "created_at": "2015-11-02T00:00:00Z",
+    "updated_at": "2022-08-11T10:00:00Z"
+  },
+
+  {
+    "case_id": "RN-2023-0507",
+    "name": "Priya Nair",
+    "alias": ["Priyanka"],
+    "status": "open",
+    "access_tier": 1,
+    "reported_by": {
+      "name": "Suresh Nair",
+      "relationship": "father",
+      "contact": "+91-9443218765",
+      "aadhaar_verified": true
+    },
+    "date_reported": "2023-04-12",
+    "missing_since": "2023-04-10",
+    "age_when_missing": 17,
+    "estimated_current_age": 19,
+    "gender": "female",
+    "physical_description": {
+      "height_cm": 161,
+      "build": "medium",
+      "complexion": "fair",
+      "hair": "black, long, usually open",
+      "eyes": "brown",
+      "distinguishing_marks": ["Small tattoo of a star on inner left wrist — done by friend with safety pin at age 15"]
+    },
+    "description": "Priya Nair, 17, went missing from Ernakulam, Kerala on 10 April 2023. She had been in regular WhatsApp contact with a man she met through Instagram who claimed to be a modelling scout in Mumbai. She packed a small bag and left a note saying she was 'going to make something of herself.' Her father found the note the next morning. She had not told her parents. Last seen at Ernakulam Junction Railway Station by a platform vendor who recognised her from the poster. She was alone, carrying a red backpack, looking at her phone. Train was Mumbai-bound. Small homemade star tattoo on left inner wrist.",
+    "photo_description": "Recent photo, age 17. Young woman, fair Kerala complexion, long black hair worn loose, medium build. Wearing jeans and a blue t-shirt. Brown eyes, high forehead, typical Nair community features. Small star tattoo visible on inner left wrist in some photos. Confident expression.",
+    "location_last_seen": {
+      "address": "Ernakulam Junction Railway Station, Platform 3",
+      "district": "Ernakulam",
+      "state": "Kerala",
+      "pin_code": "682016",
+      "geo": { "lat": 9.9816, "lon": 76.2999 }
+    },
+    "circumstances": "trafficking_suspected",
+    "vulnerability_flags": ["minor_at_disappearance", "trafficking_route"],
+    "sightings": [],
+    "tags": ["kerala", "instagram_grooming", "model_lure", "mumbai_bound", "tattoo_identifier", "recent"],
+    "created_at": "2023-04-12T07:00:00Z",
+    "updated_at": "2024-08-15T11:00:00Z"
+  },
+
+  {
+    "case_id": "RN-2010-0033",
+    "name": "Mohan Das",
+    "alias": ["Monu"],
+    "status": "reunited",
+    "access_tier": 2,
+    "reported_by": {
+      "name": "Geeta Das",
+      "relationship": "wife",
+      "contact": "+91-8888777666",
+      "aadhaar_verified": false
+    },
+    "date_reported": "2010-02-20",
+    "missing_since": "2010-02-18",
+    "age_when_missing": 34,
+    "estimated_current_age": 49,
+    "gender": "male",
+    "physical_description": {
+      "height_cm": 170,
+      "build": "medium",
+      "complexion": "wheatish",
+      "hair": "black, greying at temples",
+      "eyes": "brown",
+      "distinguishing_marks": ["Deep scar across right palm from farm equipment accident"]
+    },
+    "description": "Mohan Das, 34, a daily-wage farm labourer from Sehore district, Madhya Pradesh disappeared on 18 February 2010 after reportedly accepting work from a contractor promising ₹500/day at a brick kiln in Telangana. He never contacted his wife again. Suspected bonded labour trapping. Family has no documents. He was found in 2018 at a brick kiln in Nalgonda district after a labour rights NGO raid. Consent obtained. Reunited with family after 8 years.",
+    "photo_description": "No photo. Description: adult man, 34 at disappearance, medium build, wheatish complexion, black hair with greying temples. Deep scar across right palm. Agricultural worker's hands — calloused.",
+    "location_last_seen": {
+      "address": "Sehore bus stand",
+      "district": "Sehore",
+      "state": "Madhya Pradesh",
+      "pin_code": "466001",
+      "geo": { "lat": 23.2006, "lon": 77.0847 }
+    },
+    "circumstances": "bonded_labour",
+    "vulnerability_flags": ["no_aadhaar", "bonded_labour_context"],
+    "consent_record": {
+      "consent_asked_date": "2018-04-10",
+      "ngo_name": "Bandhua Mukti Morcha",
+      "outcome": "consented",
+      "notes": "Man was visibly emotional. Confirmed his identity via palm scar. Voluntarily agreed to family reunion. No coercion present."
+    },
+    "tags": ["madhya_pradesh", "bonded_labour", "telangana", "reunited", "ngo_rescue", "brick_kiln"],
+    "created_at": "2010-02-20T00:00:00Z",
+    "updated_at": "2018-04-15T10:00:00Z"
+  },
+
+  {
+    "case_id": "RN-2020-0291",
+    "name": "Anjali Singh",
+    "alias": [],
+    "status": "open",
+    "access_tier": 3,
+    "reported_by": {
+      "name": "Deepak Singh",
+      "relationship": "brother",
+      "contact": "+91-9234567890",
+      "aadhaar_verified": true
+    },
+    "date_reported": "2020-09-08",
+    "missing_since": "2020-09-06",
+    "age_when_missing": 28,
+    "estimated_current_age": 33,
+    "gender": "female",
+    "physical_description": {
+      "height_cm": 157,
+      "build": "medium",
+      "complexion": "fair",
+      "hair": "black, short bob cut",
+      "eyes": "black",
+      "distinguishing_marks": ["Cleft lip repair scar — surgical, neat, under nose"]
+    },
+    "description": "Anjali Singh, 28, went missing from Bhopal on 6 September 2020. She suffered from bipolar disorder and had stopped taking medication three weeks prior according to her brother. She was last seen at Bhopal Junction railway station, disoriented, asking passersby for directions to 'home' — but her home was 3km away. She had cash in her purse. Station CCTV showed her boarding a train to Jabalpur without apparent purpose. Her brother has been filing monthly follow-up reports. Cleft lip surgical scar is a reliable physical identifier.",
+    "photo_description": "Recent smartphone photo, age 28. Woman, fair complexion, short black bob cut, medium build. Visible cleft lip repair scar under the nose — surgical, neat, healed. Was wearing a yellow kurta and blue jeans when last seen. Bifocal glasses (prescription -2.5).",
+    "location_last_seen": {
+      "address": "Bhopal Junction Railway Station",
+      "district": "Bhopal",
+      "state": "Madhya Pradesh",
+      "pin_code": "462001",
+      "geo": { "lat": 23.2599, "lon": 77.4126 }
+    },
+    "circumstances": "mental_health",
+    "vulnerability_flags": ["mental_health_condition"],
+    "sightings": [
+      {
+        "sighting_id": "SG-2021-0055",
+        "reported_date": "2021-02-14",
+        "location": "Jabalpur Government Hospital",
+        "description": "An unidentified woman, approx 29, with cleft lip scar, disoriented, admitted as unknown patient. Staff noticed her looking at old train tickets.",
+        "match_confidence": 0.83,
+        "verified": true,
+        "reporter_tier": 2
+      }
+    ],
+    "institution_reports": [
+      {
+        "institution_name": "Jabalpur Government Hospital",
+        "institution_type": "hospital",
+        "report_date": "2021-02-14",
+        "description": "Female patient, approx 28-30, admitted disoriented. Cleft lip scar. Speaks Hindi with Bhopal accent. Cannot state full address. Responds to name Anjali. Mental health evaluation underway.",
+        "location": "Jabalpur, Madhya Pradesh"
+      }
+    ],
+    "tags": ["bhopal", "mental_health", "bipolar", "cleft_scar_identifier", "railway", "hospital_report"],
+    "created_at": "2020-09-08T00:00:00Z",
+    "updated_at": "2021-02-15T12:00:00Z"
+  },
+
+  {
+    "case_id": "RN-2017-0188",
+    "name": "Suresh Oraon",
+    "alias": ["Sukra"],
+    "status": "open",
+    "access_tier": 4,
+    "reported_by": {
+      "name": "Bimla Oraon",
+      "relationship": "mother",
+      "contact": "Childline 1098",
+      "aadhaar_verified": false
+    },
+    "date_reported": "2017-05-30",
+    "missing_since": "2017-05-25",
+    "age_when_missing": 12,
+    "estimated_current_age": 20,
+    "gender": "male",
+    "physical_description": {
+      "height_cm": 138,
+      "build": "slim",
+      "complexion": "dark",
+      "hair": "black, wavy, short",
+      "eyes": "dark brown",
+      "distinguishing_marks": ["Traditional Oraon tribal tattoo — small dots pattern on both cheeks, done at age 6"]
+    },
+    "description": "Suresh Oraon, 12, from an Oraon tribal village in Lohardaga district, Jharkhand disappeared on 25 May 2017. He had been approached by a man promising school fees and a hostel in Ranchi. The man was unknown to the family. Suresh left believing he was going to study. He carried no ID. His tribal community has no Aadhaar coverage. The distinctive Oraon facial tattoo dots on both cheeks — traditional community marking done in childhood — are a reliable identification marker even 8 years later. Case filed by Childline volunteer after his mother walked 12km to the nearest Childline centre.",
+    "photo_description": "Hand-drawn sketch provided by mother and school teacher. Boy, 12 years old, slim, dark Oraon complexion, wavy black hair. Distinctive small dot tattoos on both cheeks — traditional Oraon tribal pattern, symmetrical, approximately 5 dots per cheek. Large dark eyes. At 20 in 2025, these tattoos would still be clearly visible.",
+    "location_last_seen": {
+      "address": "Lohardaga village road, near primary school",
+      "district": "Lohardaga",
+      "state": "Jharkhand",
+      "pin_code": "835302",
+      "geo": { "lat": 23.4349, "lon": 84.6826 }
+    },
+    "circumstances": "trafficking_suspected",
+    "vulnerability_flags": [
+      "minor_at_disappearance",
+      "no_aadhaar",
+      "tribal_community",
+      "trafficking_route"
+    ],
+    "sightings": [],
+    "tags": ["jharkhand", "oraon_tribal", "tribal_tattoo_identifier", "child", "childline_tier4", "education_lure"],
+    "created_at": "2017-05-30T00:00:00Z",
+    "updated_at": "2023-08-01T09:00:00Z"
+  },
+
+  {
+    "case_id": "RN-2022-0644",
+    "name": "Kavitha Reddy",
+    "alias": ["Kavi"],
+    "status": "open",
+    "access_tier": 1,
+    "reported_by": {
+      "name": "Ranga Reddy",
+      "relationship": "father",
+      "contact": "+91-9123456789",
+      "aadhaar_verified": true
+    },
+    "date_reported": "2022-11-19",
+    "missing_since": "2022-11-17",
+    "age_when_missing": 16,
+    "estimated_current_age": 19,
+    "gender": "female",
+    "physical_description": {
+      "height_cm": 158,
+      "build": "medium",
+      "complexion": "wheatish",
+      "hair": "black, long, usually in a plait",
+      "eyes": "black",
+      "distinguishing_marks": ["Chickenpox scar cluster on forehead, three small circular scars", "Henna stain on both hands — festival of Diwali 5 days before disappearance"]
+    },
+    "description": "Kavitha Reddy, 16, disappeared from Warangal, Telangana on 17 November 2022, five days after Diwali. She had been in contact with a young man she met at a local fair, who introduced himself as a software professional from Hyderabad. Her phone was switched off at 7:30pm. Her school friends said she had been planning to meet him. CCTV at Warangal railway station showed her leaving with a young man, around 25, in a grey shirt. She had henna on her hands from Diwali celebrations. Suspected elopement turned trafficking.",
+    "photo_description": "Selfie photo at Diwali, 5 days before disappearance. Girl, 16, wheatish Telangana complexion, long black hair in plait, medium build. Henna pattern clearly visible on both hands. Three small chickenpox scars on forehead. Wearing a traditional lehenga in gold and red. Smiling, confident expression.",
+    "location_last_seen": {
+      "address": "Warangal Railway Station",
+      "district": "Warangal",
+      "state": "Telangana",
+      "pin_code": "506002",
+      "geo": { "lat": 17.9784, "lon": 79.5941 }
+    },
+    "circumstances": "trafficking_suspected",
+    "vulnerability_flags": ["minor_at_disappearance", "trafficking_route"],
+    "sightings": [],
+    "tags": ["telangana", "warangal", "railway", "elopement_suspected", "teenager", "recent", "chickenpox_scar"],
+    "created_at": "2022-11-19T08:00:00Z",
+    "updated_at": "2024-03-22T10:00:00Z"
+  },
+
+  {
+    "case_id": "RN-2018-0356",
+    "name": "Unidentified Male — Howrah Hospital",
+    "alias": ["John Doe RN2018"],
+    "status": "open",
+    "access_tier": 2,
+    "reported_by": {
+      "name": "Dr. Sunanda Ghosh",
+      "relationship": "reporting_doctor",
+      "contact": "+91-9832100000",
+      "aadhaar_verified": false
+    },
+    "date_reported": "2018-07-14",
+    "missing_since": "2018-07-12",
+    "age_when_missing": 35,
+    "estimated_current_age": 42,
+    "gender": "male",
+    "physical_description": {
+      "height_cm": 172,
+      "build": "heavy",
+      "complexion": "dark",
+      "hair": "black, short, receding",
+      "eyes": "brown",
+      "distinguishing_marks": [
+        "Large surgical scar on abdomen — appendectomy, old",
+        "Tattoo on right bicep — appears to be an eagle or bird in flight, black ink",
+        "Callouses on both hands consistent with manual labour, possibly masonry"
+      ]
+    },
+    "description": "Unidentified male, estimated 35–40 years old, admitted to Howrah District Hospital on 12 July 2018 after being found unconscious near the railway goods yard. Possible head trauma. Patient has retrograde amnesia — cannot recall his name, family, or origin. Speaks Bengali with a North Bengal or possibly Assamese inflection. Has callouses consistent with masonry work. Large appendectomy scar, bird tattoo on right bicep. No ID found. No one has reported him missing despite posters at the hospital. He is stable and residing at a shelter in Howrah. The unidentified person profiler AI flagged masonry + North Bengal accent + age + build as potentially matching missing persons from flood-affected districts of Assam (2018 floods were severe).",
+    "photo_description": "Hospital photograph taken 2018. Adult male, 35-40, dark complexion, heavy build, short black hair with significant receding hairline. Slight grey at temples. Bird tattoo (eagle-like) on right bicep clearly visible. Looking slightly dazed but cooperative.",
+    "location_last_seen": {
+      "address": "Near Howrah Railway Goods Yard, found unconscious",
+      "district": "Howrah",
+      "state": "West Bengal",
+      "pin_code": "711101",
+      "geo": { "lat": 22.5958, "lon": 88.2636 }
+    },
+    "circumstances": "unknown",
+    "vulnerability_flags": ["no_aadhaar", "no_family_contact", "mental_health_condition"],
+    "institution_reports": [
+      {
+        "institution_name": "Howrah District Hospital",
+        "institution_type": "hospital",
+        "report_date": "2018-07-14",
+        "description": "Male patient, estimated 35-40, retrograde amnesia post head trauma. Bengali speaker, possible North Bengal or Assam origin. Masonry callouses, appendectomy scar, bird tattoo right bicep. Stable. Sheltered at Howrah Nirashray.",
+        "location": "Howrah, West Bengal"
+      }
+    ],
+    "tags": ["west_bengal", "howrah", "unidentified_person", "amnesia", "hospital_report", "masonry", "assam_flood_suspected", "tattoo_identifier"],
+    "created_at": "2018-07-14T00:00:00Z",
+    "updated_at": "2023-05-10T08:00:00Z"
+  },
+
+  {
+    "case_id": "RN-2016-0201",
+    "name": "Meena Kumari Yadav",
+    "alias": ["Munni"],
+    "status": "open",
+    "access_tier": 2,
+    "reported_by": {
+      "name": "Ramkhelawan Yadav",
+      "relationship": "father",
+      "contact": "+91-8765432100",
+      "aadhaar_verified": false
+    },
+    "date_reported": "2016-03-22",
+    "missing_since": "2016-03-20",
+    "age_when_missing": 11,
+    "estimated_current_age": 20,
+    "gender": "female",
+    "physical_description": {
+      "height_cm": 128,
+      "build": "slim",
+      "complexion": "wheatish",
+      "hair": "black, long, braided",
+      "eyes": "brown",
+      "distinguishing_marks": ["Two-rupee-coin-sized birthmark on right shoulder blade, dark brown", "Slightly crooked lower front tooth"]
+    },
+    "description": "Meena Kumari Yadav, 11, disappeared from Sitapur district, Uttar Pradesh on 20 March 2016 while returning from her school — a walk of 800 metres. Two boys from the same school reported seeing her being pulled into a vehicle by two men. The vehicle was described as a white tempo van. Family is poor, agricultural labourers, no documents. Meena was bright — top of her class. Father walked 30km to file the report with police, who did not initially register it. Case eventually filed via NGO. Trafficking on the Lucknow-Gorakhpur corridor is common. The birthmark on her right shoulder blade is a strong identifier.",
+    "photo_description": "School photo, 2015. Girl, 11, slim, wheatish UP complexion, long black hair in two braids. Brown eyes, slightly crooked lower front tooth visible in her smile. Wearing a white school uniform shirt with green dupatta. At 20 years in 2025 she would be a young woman — high cheekbones, typical Yadav community features.",
+    "location_last_seen": {
+      "address": "Road between Sitapur Primary School and Yadav mohalla, approx 800m",
+      "district": "Sitapur",
+      "state": "Uttar Pradesh",
+      "pin_code": "261001",
+      "geo": { "lat": 27.5706, "lon": 80.6831 }
+    },
+    "circumstances": "kidnapping",
+    "vulnerability_flags": [
+      "minor_at_disappearance",
+      "no_aadhaar",
+      "trafficking_route"
+    ],
+    "sightings": [],
+    "tags": ["uttar_pradesh", "sitapur", "child_abduction", "trafficking_corridor", "vehicle_abduction", "shoulder_birthmark"],
+    "created_at": "2016-03-22T00:00:00Z",
+    "updated_at": "2024-01-18T10:00:00Z"
+  },
+
+  {
+    "case_id": "RN-2024-0811",
+    "name": "Rahul Thakur",
+    "alias": [],
+    "status": "open",
+    "access_tier": 1,
+    "reported_by": {
+      "name": "Seema Thakur",
+      "relationship": "sister",
+      "contact": "+91-9876012345",
+      "aadhaar_verified": true
+    },
+    "date_reported": "2024-01-09",
+    "missing_since": "2024-01-07",
+    "age_when_missing": 29,
+    "estimated_current_age": 30,
+    "gender": "male",
+    "physical_description": {
+      "height_cm": 176,
+      "build": "medium",
+      "complexion": "fair",
+      "hair": "black, short, slight beard",
+      "eyes": "brown",
+      "distinguishing_marks": ["Psoriasis patches on both elbows, silvery-white, chronic"]
+    },
+    "description": "Rahul Thakur, 29, a software engineer from Bangalore, went missing on 7 January 2024. He had been experiencing severe depression following job loss. His phone was found at Ulsoor Lake in Bangalore. He left no note. His sister noticed he had been reading about Hindu pilgrimage sites and had searched for Char Dham routes the day before. He withdrew ₹15,000 in cash. Bank account shows no transactions since. He may have gone on a religious retreat or may be in acute mental health crisis. Psoriasis patches on both elbows are a chronic condition and will still be present.",
+    "photo_description": "LinkedIn photo, professional. Man, 29, fair complexion, black hair neatly combed, slight beard. Business casual shirt. Medium build, 5'9\". Psoriasis patches visible on both elbows in phone photos shared by family.",
+    "location_last_seen": {
+      "address": "Ulsoor Lake, Bangalore — phone found on bench",
+      "district": "Bangalore Urban",
+      "state": "Karnataka",
+      "pin_code": "560008",
+      "geo": { "lat": 12.9839, "lon": 77.6214 }
+    },
+    "circumstances": "mental_health",
+    "vulnerability_flags": ["mental_health_condition"],
+    "sightings": [],
+    "tags": ["bangalore", "depression", "software_engineer", "char_dham", "religious_wandering_possible", "psoriasis_identifier", "recent"],
+    "created_at": "2024-01-09T11:00:00Z",
+    "updated_at": "2024-06-14T09:00:00Z"
+  },
+
+  {
+    "case_id": "RN-2013-0088",
+    "name": "Chameli Devi",
+    "alias": ["Champa"],
+    "status": "open",
+    "access_tier": 4,
+    "reported_by": {
+      "name": "Gopi Lal",
+      "relationship": "father",
+      "contact": "Childline 1098",
+      "aadhaar_verified": false
+    },
+    "date_reported": "2013-08-05",
+    "missing_since": "2013-08-01",
+    "age_when_missing": 7,
+    "estimated_current_age": 19,
+    "gender": "female",
+    "physical_description": {
+      "height_cm": 105,
+      "build": "slim",
+      "complexion": "dark",
+      "hair": "black, short, uneven",
+      "eyes": "very dark brown",
+      "distinguishing_marks": [
+        "Keloid scar on left shoulder — burn from cooking fire, age 4",
+        "Widely spaced front teeth"
+      ]
+    },
+    "description": "Chameli Devi, 7, went missing from a slum near Surat railway station on 1 August 2013. She was playing outside while her mother sold vegetables at the morning market, 100 metres away. A neighbour said she saw Chameli being carried away by a woman she did not recognise, towards the railway station. Father Gopi Lal is a daily-wage labourer with no documents — report filed through Childline years later when he saw a poster at a shelter. Chameli had a distinctive keloid scar on her left shoulder from a cooking fire at age 4 — the raised keloid tissue will still be prominent at age 19. Widely spaced front teeth also notable.",
+    "photo_description": "No photograph. Sketch from family description. Small girl, 7, very dark complexion, short uneven hair, very dark brown eyes. Widely spaced front teeth. Keloid scar on left shoulder — raised, irregular, approximately 5cm, from burn. At 19 years in 2025: young woman, slim build, the keloid scar on left shoulder will still be raised and clearly visible.",
+    "location_last_seen": {
+      "address": "Slum near Surat Railway Station, Sector B",
+      "district": "Surat",
+      "state": "Gujarat",
+      "pin_code": "395003",
+      "geo": { "lat": 21.2044, "lon": 72.8317 }
+    },
+    "circumstances": "kidnapping",
+    "vulnerability_flags": [
+      "minor_at_disappearance",
+      "no_aadhaar",
+      "trafficking_route"
+    ],
+    "sightings": [],
+    "tags": ["gujarat", "surat", "child", "slum", "childline_tier4", "keloid_scar_identifier", "long_duration"],
+    "created_at": "2013-08-05T00:00:00Z",
+    "updated_at": "2023-11-20T09:00:00Z"
+  },
+
+  {
+    "case_id": "RN-2024-0902",
+    "name": "Divya Menon",
+    "alias": [],
+    "status": "open",
+    "access_tier": 1,
+    "reported_by": {
+      "name": "Ashok Menon",
+      "relationship": "husband",
+      "contact": "+91-9944332211",
+      "aadhaar_verified": true
+    },
+    "date_reported": "2024-03-18",
+    "missing_since": "2024-03-16",
+    "age_when_missing": 31,
+    "estimated_current_age": 31,
+    "gender": "female",
+    "physical_description": {
+      "height_cm": 163,
+      "build": "slim",
+      "complexion": "fair",
+      "hair": "black, shoulder-length",
+      "eyes": "brown",
+      "distinguishing_marks": ["Double-pierced left ear, single right — uncommon arrangement", "Small nose stud scar on right nostril from old piercing"]
+    },
+    "description": "Divya Menon, 31, a school teacher from Thrissur, Kerala disappeared on 16 March 2024 following an argument with her husband about her natal family. Neighbours reported hearing shouting the previous evening. She left on foot with a small handbag — no luggage. Her mother in Palakkad said Divya called her at 9pm from a local STD booth saying she was safe but needed space. No further contact. Husband filed missing report 40 hours later. Police treating as voluntary departure but family concerned. Unusual piercing arrangement — double-pierced left ear, single right — is a strong identifier.",
+    "photo_description": "WhatsApp profile photo, 2023. Woman, 31, fair Kerala complexion, shoulder-length black hair worn loose, slim build. Brown eyes, small nose stud visible on right nostril (old scar even without jewellery). Double piercing visible in left ear. Professional appearance.",
+    "location_last_seen": {
+      "address": "Thrissur town, residential area near Poothole",
+      "district": "Thrissur",
+      "state": "Kerala",
+      "pin_code": "680004",
+      "geo": { "lat": 10.5276, "lon": 76.2144 }
+    },
+    "circumstances": "family_conflict",
+    "vulnerability_flags": [],
+    "sightings": [],
+    "tags": ["kerala", "thrissur", "domestic_dispute", "voluntary_departure_possible", "teacher", "ear_piercing_identifier", "recent"],
+    "created_at": "2024-03-18T14:00:00Z",
+    "updated_at": "2024-07-05T09:00:00Z"
+  },
+
+  {
+    "case_id": "RN-2011-0145",
+    "name": "Birsa Munda",
+    "alias": ["Birsa"],
+    "status": "open",
+    "access_tier": 4,
+    "reported_by": {
+      "name": "Sukri Munda",
+      "relationship": "wife",
+      "contact": "Childline 1098",
+      "aadhaar_verified": false
+    },
+    "date_reported": "2011-04-10",
+    "missing_since": "2011-04-05",
+    "age_when_missing": 26,
+    "estimated_current_age": 40,
+    "gender": "male",
+    "physical_description": {
+      "height_cm": 162,
+      "build": "slim",
+      "complexion": "dark",
+      "hair": "black, short",
+      "eyes": "dark brown",
+      "distinguishing_marks": [
+        "Traditional Munda tribal facial scarification — two parallel lines on each cheek, 3cm each",
+        "Missing left little finger — lost in farming accident, age 20"
+      ]
+    },
+    "description": "Birsa Munda, 26, from Khunti district, Jharkhand went missing on 5 April 2011 after being recruited by a labour contractor promising ₹8,000/month at a factory in Gujarat. He has not contacted his wife or two children since. His wife Sukri walked to a Childline centre in 2014 after hearing he might be in Gujarat. Traditional Munda facial scarification marks — two parallel lines on each cheek, done at age 18 — are permanent and highly distinctive. Missing left little finger is another strong identifier. He may have been trapped in bonded labour in a factory, brick kiln, or construction site in Gujarat or Maharashtra.",
+    "photo_description": "No photograph. Description: adult man, 26 at disappearance, slim build, dark Munda tribal complexion. Two parallel scarification lines on each cheek — traditional Munda marking, thin raised lines, permanent. Missing left little finger — clear stump visible. Short black hair. At 40 years in 2025 he would have the scarification marks clearly and the missing finger is an absolute identifier.",
+    "location_last_seen": {
+      "address": "Khunti village — left with labour contractor",
+      "district": "Khunti",
+      "state": "Jharkhand",
+      "pin_code": "835210",
+      "geo": { "lat": 23.0709, "lon": 85.2799 }
+    },
+    "circumstances": "bonded_labour",
+    "vulnerability_flags": [
+      "no_aadhaar",
+      "tribal_community",
+      "bonded_labour_context",
+      "physical_disability"
+    ],
+    "sightings": [],
+    "tags": ["jharkhand", "khunti", "munda_tribal", "bonded_labour", "facial_scarification", "missing_finger", "childline_tier4", "gujarat_suspected"],
+    "created_at": "2011-04-10T00:00:00Z",
+    "updated_at": "2024-04-01T09:00:00Z"
+  }
+]
