@@ -46,26 +46,7 @@ Every year, over 300,000 people go missing in India. Many are never found — no
 
 ## 🏗️ Architecture
 
-```
-User (Browser)
-      │
-      ▼
-Streamlit UI (app.py)
-      │
-      ├──► Elastic Cloud ──► reunion_cases index (15 demo cases)
-      │         └──► Full-text search, sighting cross-reference
-      │
-      ├──► Groq AI (llama-3.3-70b) ──► 4 AI Tools
-      │         ├──► Age Progression
-      │         ├──► Sighting Match Analysis
-      │         ├──► Risk Assessment
-      │         └──► Unidentified Person Profiler
-      │
-      └──► Consent Wall ──► Dual Aadhaar verification
-                └──► Reunion Protocol
-```
-
----
+![REUNION Architecture](https://raw.githubusercontent.com/akankshamuthyala/reunion-agent/main/architecture.png)
 
 ## 🔐 4-Tier Access System
 
