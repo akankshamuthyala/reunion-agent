@@ -45,6 +45,7 @@ Every year, over 300,000 people go missing in India. Many are never found — no
 ---
 
 ## 🏗️ Architecture
+<img width="1360" height="1160" alt="architecture" src="https://github.com/user-attachments/assets/d8453a74-ccdc-437d-b0b5-b07fc6d58f6f" />
 
 ![REUNION Architecture](https://raw.githubusercontent.com/akankshamuthyala/reunion-agent/main/architecture.png)
 
