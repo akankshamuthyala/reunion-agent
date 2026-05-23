@@ -3,15 +3,15 @@ import json
 import time
 import streamlit as st
 from dotenv import load_dotenv
-from groq import Groq
+import google.generativeai as genai
 from elasticsearch import Elasticsearch
 
 load_dotenv()
 
-groq_client = Groq(api_key=os.getenv("GROQ_API_KEY"))
+genai.configure(api_key=os.getenv("GEMINI_API_KEY"))
 es = Elasticsearch(os.getenv("ELASTIC_URL"), api_key=os.getenv("ELASTIC_API_KEY"))
 
-MODEL = "llama-3.3-70b-versatile"
+MODEL = "gemini-2.0-flash"
 INDEX = "reunion_cases"
 
 VALID_AADHAAR = {
@@ -41,15 +41,15 @@ def get_loc(case):
 
 def ask_ai(prompt: str) -> dict:
     with st.spinner("🤖 AI analysing..."):
-        response = groq_client.chat.completions.create(
-            model=MODEL,
-            messages=[
-                {"role":"system","content":"You are REUNION, an expert AI for missing persons in India. Always respond with valid JSON only. No markdown, no explanation."},
-                {"role":"user","content":prompt}
-            ],
-            temperature=0.3,
+        model = genai.GenerativeModel(
+            model_name=MODEL,
+            system_instruction="You are REUNION, an expert AI for missing persons in India. Always respond with valid JSON only. No markdown, no explanation."
         )
-    text = response.choices[0].message.content.strip()
+        response = model.generate_content(
+            prompt,
+            generation_config=genai.GenerationConfig(temperature=0.3)
+        )
+    text = response.text.strip()
     if text.startswith("```"):
         text = text.split("```")[1]
         if text.startswith("json"): text = text[4:]
@@ -125,7 +125,7 @@ st.markdown("""
 .case-card{background:#1a1a2e;border:1px solid #2d2d44;border-radius:10px;padding:1rem 1.2rem;margin-bottom:10px}
 .timeline-bar{background:#2d2d44;border-radius:8px;padding:1rem;margin:1rem 0;display:flex;align-items:center;gap:8px}
 .badge-elastic{background:#00BFB3;color:#000;padding:3px 10px;border-radius:99px;font-size:11px;font-weight:600}
-.badge-groq{background:#f55036;color:#fff;padding:3px 10px;border-radius:99px;font-size:11px;font-weight:600}
+.badge-gemini{background:#4285F4;color:#fff;padding:3px 10px;border-radius:99px;font-size:11px;font-weight:600}
 .suggestion-btn{background:#1a1a2e;border:1px solid #2d2d44;border-radius:8px;padding:8px 12px;cursor:pointer;font-size:13px;color:#a0a0b0;width:100%;text-align:left;margin-bottom:6px}
 .suggestion-btn:hover{border-color:#e94560;color:#e94560}
 </style>
@@ -140,7 +140,7 @@ st.markdown("""
     </div>
     <div style="display:flex;gap:8px;flex-wrap:wrap">
       <span class="badge-elastic">Elastic Cloud</span>
-      <span class="badge-groq">Groq AI</span>
+      <span class="badge-gemini">Gemini AI</span>
       <a href="https://github.com/akankshamuthyala/reunion-agent" target="_blank"
          style="background:#24292e;color:#fff;padding:3px 10px;border-radius:99px;font-size:11px;font-weight:600;text-decoration:none">GitHub</a>
     </div>
@@ -175,7 +175,7 @@ with st.sidebar:
     """)
     st.markdown("---")
     st.markdown("### 🏆 Hackathon")
-    st.markdown("**Track:** Elastic\n\n**Event:** REUNION Hackathon 2026")
+    st.markdown("**Track:** Elastic\n\n**Event:** Google Cloud Rapid Agent Hackathon 2026")
 
 # ── HOME ───────────────────────────────────────────────────────────────────────
 if page == "🏠 Home":
@@ -195,7 +195,7 @@ if page == "🏠 Home":
         st.markdown("### 🌟 How REUNION Works")
         steps = [
             ("1","🔍 Search","Family searches Elastic full-text index"),
-            ("2","🤖 AI Analysis","Age progression, risk, sighting match"),
+            ("2","🤖 AI Analysis","Age progression, risk, sighting match via Gemini"),
             ("3","📊 Match Found","Confidence ≥ 60% flags a potential match"),
             ("4","🔒 Consent Wall","Both parties verify Aadhaar before contact"),
             ("5","🎉 Reunion","NGO mediates. Case marked reunited."),
@@ -676,13 +676,16 @@ elif page == "💬 Agent Chat":
 
         with st.chat_message("assistant"):
             with st.spinner("Thinking..."):
-                response = groq_client.chat.completions.create(
-                    model=MODEL,
-                    messages=[
-                        {"role":"system","content":"You are REUNION, an empathetic AI agent helping reunite missing persons in India. Mention Elastic search when you find cases. Always highlight the consent wall for sensitive matches. Be warm and helpful."+context},
-                        *[{"role":m["role"],"content":m["content"]} for m in st.session_state.messages]
-                    ]
+                chat_model = genai.GenerativeModel(
+                    model_name=MODEL,
+                    system_instruction="You are REUNION, an empathetic AI agent helping reunite missing persons in India. Mention Elastic search when you find cases. Always highlight the consent wall for sensitive matches. Be warm and helpful." + context
                 )
-                reply = response.choices[0].message.content
+                history = []
+                for m in st.session_state.messages[:-1]:
+                    role = "user" if m["role"] == "user" else "model"
+                    history.append({"role": role, "parts": [m["content"]]})
+                chat = chat_model.start_chat(history=history)
+                response = chat.send_message(prompt)
+                reply = response.text
             st.markdown(reply)
         st.session_state.messages.append({"role":"assistant","content":reply})
