@@ -71,15 +71,12 @@ Return JSON:
     return result
 
 def analyse_sighting(case, desc, loc):
-    marks = case.get("distinguishing_marks","")
-    return ask_ai(f"""Missing persons sighting analyst. Does this sighting match the case?
-MISSING: {case.get('name')}, missing {case.get('year_missing')}, age then: {case.get('age_when_missing')}
-Description: {case.get('description', case.get('photo_description','N/A'))}
-Distinguishing marks: {marks}
-SIGHTING: Location: {loc} | Description: {desc}
-Return JSON:
-{{"confidence_score":85,"match_level":"HIGH","matching_features":["feature 1","feature 2"],"reasoning":"2 sentence explanation","trigger_consent_wall":true}}
-trigger_consent_wall must be true if confidence_score >= 60.""")
+    marks = case.get("distinguishing_marks", "")
+    return ask_ai(f"""Sighting match analysis. Reply in JSON only.
+CASE: {case.get('name')}, missing {case.get('year_missing')}, age then: {case.get('age_when_missing')}, marks: {marks}
+SIGHTING: {desc} | Location: {loc}
+JSON: {{"confidence_score":85,"match_level":"HIGH","matching_features":["feature 1","feature 2"],"reasoning":"2 sentences","trigger_consent_wall":true}}
+Set trigger_consent_wall true if confidence_score>=60.""")
 
 def assess_risk(case):
     years = 2026 - case.get("year_missing", 2000)
